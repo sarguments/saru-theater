@@ -1,8 +1,8 @@
 package hika.saru.java.domain;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
+import java.util.stream.Stream;
 
 public class Theater {
     private final List<TicketOffice> ticketOffices = new ArrayList<>();
@@ -12,7 +12,12 @@ public class Theater {
 
     Long getFee() {return this.fee;}
 
-    public void setTicketOffices(TicketOffice... ticketOffices) {this.ticketOffices.addAll(Arrays.asList(ticketOffices));}
+    public void setTicketOffices(TicketOffice... ticketOffices) {
+        Stream.of(ticketOffices).forEach(o -> {
+            o.setTheater(this);
+            this.ticketOffices.add(o);
+        });
+    }
 
     public void setTicket(TicketOffice ticketOffice, Long num) {
         if (!ticketOffices.contains(ticketOffice)) return;

@@ -6,6 +6,7 @@ import java.util.List;
 public class TicketOffice {
     private Long amount;
     private List<Ticket> tickets = new ArrayList<>();
+    private Theater theater;
 
     public TicketOffice(Long amount) {this.amount = amount;}
 
@@ -28,5 +29,16 @@ public class TicketOffice {
     public Long getTicketPrice() {
         if (tickets.size() == 0) return 0L;
         else return tickets.get(0).getFee();
+    }
+
+    public void setTheater(Theater theater) {
+        if (this.theater == theater) {
+            System.out.println("중복 Theater");
+            return;
+        }
+
+        System.out.println("새로운 Theater");
+
+        this.theater = theater;
     }
 }
