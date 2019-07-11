@@ -5,7 +5,7 @@ https://codespitz.com/s83/list.php
 
 ## 1회차
 
-[정리전 노트](lecture_01)
+[정리전 노트](lecture_01.md)
 
 ### practice #1 ✅
 * 마지막 theater예제에서 TicketOffice는 암묵적으로 하나의 극장하고만 계약하고 있다는 가정이있게 구현되어있다. 코드상 이 조건을 강제하도록 개선하라.
@@ -16,8 +16,8 @@ https://codespitz.com/s83/list.php
 
 ## 2회차
 
-[정리전 노트](lecture_02)
+[정리전 노트](lecture_02.md)
 
 ---
 
-[개인 정리](private_note)
+[개인 정리](private_note.md)
