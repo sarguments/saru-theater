@@ -1,5 +1,7 @@
 # 개인 정리
 
+참고 : http://aeternum.egloos.com/, https://effectiveprogramming.tistory.com/ 등...
+
 ### 추상화
 목적에 중요한 세부사항에만 초점을 맞추는 것.
 추상화는 큰 문제를 작은 구성요소로 분리하는 것이고, 각각의 구성요소들은 상대적으로 격리되어 동작될 수 있다.
