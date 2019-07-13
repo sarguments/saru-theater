@@ -6,8 +6,8 @@ import hika.saru.java.discount.impl.PercentDiscount;
 public class SequencePercentDiscount extends PercentDiscount {
     private final int sequence;
 
-    public SequencePercentDiscount(double pecent, int sequence) {
-        super(pecent);
+    public SequencePercentDiscount(double percent, int sequence) {
+        super(percent);
         this.sequence = sequence;
     }
 
