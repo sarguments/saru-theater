@@ -1,4 +1,4 @@
-package hika.saru.java.domain;
+package hika.saru.java;
 
 public class Invitation {
     public static final Invitation EMPTY = new Invitation(null);

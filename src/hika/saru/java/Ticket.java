@@ -1,4 +1,4 @@
-package hika.saru.java.domain;
+package hika.saru.java;
 
 public class Ticket {
     public static final Ticket EMPTY = new Ticket(null);
@@ -16,6 +16,4 @@ public class Ticket {
             return true;
         }
     }
-
-    public Long getFee() {return theater.getFee();}
 }

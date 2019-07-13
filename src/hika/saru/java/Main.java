@@ -1,29 +1,46 @@
 package hika.saru.java;
 
-import hika.saru.java.domain.Audience;
-import hika.saru.java.domain.Theater;
-import hika.saru.java.domain.TicketOffice;
-import hika.saru.java.domain.TicketSeller;
+import hika.saru.java.discount.impl.AmountDiscount;
+import hika.saru.java.discount.SequenceAmountDiscount;
+
+import java.time.Duration;
+import java.time.LocalDateTime;
 
 public class Main {
     public static void main(String[] args) {
-        Theater theater = new Theater(100L);
-        Audience audience1 = new Audience(0L);
-        Audience audience2 = new Audience(50L);
-        TicketOffice ticketOffice = new TicketOffice(0L);
+        Theater theater = new Theater(Money.of(100.0));
+        Movie movie = new Movie<AmountDiscount>(
+            "spiderman",
+            Duration.ofMinutes(120L),
+            Money.of(5000.0),
+            new SequenceAmountDiscount(Money.of(1000.0), 1)
+        );
+        theater.addMovie(movie);
+
+        for (int day = 7; day < 32; day++) {
+            for (int hour = 10, seq = 1; hour < 24; hour += 3, seq++) {
+                theater.addScreening(
+                    movie,
+                    new Screening(
+                        seq,
+                        LocalDateTime.of(2019, 7, day, hour, 00, 00),
+                        100
+                    )
+                );
+            }
+        }
+
+        TicketOffice ticketOffice = new TicketOffice(Money.of(0.0));
+        theater.contractTicketOffice(ticketOffice, 10.0);
         TicketSeller seller = new TicketSeller();
-
-        theater.setTicketOffices(ticketOffice);
-        theater.setTicket(ticketOffice, 10L);
-        theater.setInvitation(audience1);
         seller.setTicketOffice(ticketOffice);
+        Customer customer = new Customer(Money.of(20000.0));
 
-        audience1.buyTicket(seller);
-        audience2.buyTicket(seller);
-        boolean isOk1 = theater.enter(audience1);
-        boolean isOk2 = theater.enter(audience2);
-
-        System.out.println(isOk1);
-        System.out.println(isOk2);
+        for (Screening screening : theater.getScreening(movie)) {
+            customer.reverse(seller, theater, movie, screening, 2);
+            boolean isOk = theater.enter(customer, 2);
+            System.out.println(isOk);
+//            break;
+        }
     }
 }
