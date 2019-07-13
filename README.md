@@ -1,8 +1,9 @@
 # saru-theater
 코드스피츠 83 오브젝트 스터디
 
-https://www.facebook.com/groups/codespitz/
-https://codespitz.com/s83/list.php
+* https://www.facebook.com/groups/codespitz/
+* https://codespitz.com/s83/list.php
+* https://www.youtube.com/watch?v=sWyZUzQW3IM&list=PLBNdLLaRx_rI-UsVIGeWX_iv-e8cxpLxS
 
 ## 1회차
 
