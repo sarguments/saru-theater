@@ -1,6 +1,6 @@
 package hika.saru.java.discount;
 
-import hika.saru.java.Money;
+import hika.saru.java.vo.Money;
 import hika.saru.java.Screening;
 import hika.saru.java.discount.impl.AmountDiscount;
 

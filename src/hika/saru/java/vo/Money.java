@@ -1,9 +1,9 @@
-package hika.saru.java;
+package hika.saru.java.vo;
 
 public class Money {
     private final Double amount;
 
-    Money(Double amount) {this.amount = amount;}
+    private Money(Double amount) {this.amount = amount;}
 
     public static Money of(Double amount) {return new Money(amount);}
 

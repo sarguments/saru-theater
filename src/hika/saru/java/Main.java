@@ -2,6 +2,7 @@ package hika.saru.java;
 
 import hika.saru.java.discount.SequenceAmountDiscount;
 import hika.saru.java.discount.impl.AmountDiscount;
+import hika.saru.java.vo.Money;
 
 import java.time.Duration;
 import java.time.LocalDateTime;
@@ -9,6 +10,7 @@ import java.time.LocalDateTime;
 public class Main {
     public static void main(String[] args) {
         Theater theater = new Theater(Money.of(100.0));
+
         Movie movie = new Movie<AmountDiscount>(
             "spiderman",
             Duration.ofMinutes(120L),
@@ -17,14 +19,18 @@ public class Main {
         );
         theater.addMovie(movie);
 
+        // theater init
         theaterInit(theater, movie);
 
         TicketOffice ticketOffice = new TicketOffice(Money.of(0.0));
         theater.contractTicketOffice(ticketOffice, 10.0);
+
         TicketSeller seller = new TicketSeller();
         seller.setTicketOffice(ticketOffice);
+
         Customer customer = new Customer(Money.of(20000.0));
 
+        // enter
         enterProcess(theater, movie, seller, customer);
     }
 

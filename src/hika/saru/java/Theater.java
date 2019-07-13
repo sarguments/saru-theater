@@ -1,5 +1,7 @@
 package hika.saru.java;
 
+import hika.saru.java.vo.Money;
+
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Map;

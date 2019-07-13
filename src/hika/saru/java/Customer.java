@@ -1,5 +1,7 @@
 package hika.saru.java;
 
+import hika.saru.java.vo.Money;
+
 public class Customer {
     Reservation reservation = Reservation.NONE;
     private Money amount;

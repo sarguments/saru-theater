@@ -2,6 +2,7 @@ package hika.saru.java;
 
 import hika.saru.java.discount.DiscountCondition;
 import hika.saru.java.discount.DiscountPolicy;
+import hika.saru.java.vo.Money;
 
 import java.time.Duration;
 import java.util.Arrays;
