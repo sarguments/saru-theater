@@ -27,3 +27,6 @@
 다음과 같이 타입 매개변수에 다중 경계를 지정할 수도 있다.
 
 `T extends Runnable & AutoCloseable`
+
+## 추가 참고
+* [https://lng1982.tistory.com/240](https://lng1982.tistory.com/240)
