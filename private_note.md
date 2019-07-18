@@ -41,4 +41,5 @@
 5. 구체적인 형태를 가지지 않는 것들 - 경제, 국가 - 도 객체가 될 수 있다.
 6. 객체에 대한 정의는 상대적이다.
 7. 객체는 객체를 포함할 수 있다.
+
 https://www.joinc.co.kr/w/Site/SoftWare_engineering/OOP
