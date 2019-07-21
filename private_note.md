@@ -43,3 +43,30 @@
 7. 객체는 객체를 포함할 수 있다.
 
 https://www.joinc.co.kr/w/Site/SoftWare_engineering/OOP
+
+
+## Discussing differences between abstract classes and interfaces
+
+**Abstract class** and **interface** both are used to achieve abstraction where we can declare the abstract methods. We cannot create instances of abstract classes and interfaces directly, only through classes inherited them.
+
+Since Java 8, an interface can have default and static methods that contain an implementation. It makes interface more similar to an abstract class.
+
+There is a list of some important differences between these concepts.
+
+- an **abstract class** can have *abstract* and *non-abstract* instance methods when an **interface**can have *abstract* or *default* instance methods;
+- an **abstract class** can extend another abstract or regular class when an **interface** can only extend another interface;
+- an **abstract class** can extend only one class when an **interface** can extend any number of interfaces;
+- an abstract class can have *final*, *non-final*, *static*, *non-static* *variables* (regular fields) when an interface has only *static final variables*;
+- an **abstract class** can provide an implementation of an interface when an **interface** can't provide an implementation of an abstract class;
+- an **abstract class** can have a constructor when an **interface** cannot;
+- in an **abstract class**, the keyword `abstract` is mandatory to declare a method as an *abstract* when in an **interface** this keyword is optional.
+
+Remember, a class **extends** another class, a class **implements** an interface, but an interface **extends** another interface.
+
+The list of differences is not full. **Abstract classes** and **interfaces** have a lot of other differences. But the main difference is their appointment.
+
+Typically, interfaces are used to decouple the interface of a component (class) from the implementation when abstract classes are often used as base classes with common fields for extending by subclasses.
+
+https://hyperskill.org/learn/step/3563
+
+
