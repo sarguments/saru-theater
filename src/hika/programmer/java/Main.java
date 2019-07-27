@@ -22,7 +22,7 @@ public class Main {
                     }
                 };
 
-                setProgrammer(frontEnd);
+                programmer = frontEnd;
 
                 return new Program[]{frontEnd.getProgram(this)};
             }
@@ -45,8 +45,8 @@ public class Main {
                     }
                 };
 
-                setFrontEndProgrammer(frontEnd);
-                setBackEndProgrammer(backEnd);
+                frontEndProgrammer = frontEnd;
+                backEndProgrammer = backEnd;
 
                 return new Program[]{frontEnd.getProgram(this), backEnd.getProgram(this)};
             }

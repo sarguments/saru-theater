@@ -6,28 +6,12 @@ import hika.programmer.java.domain.Paper;
 import hika.programmer.java.domain.Programmer;
 
 public abstract class ServerClient implements Paper {
-    private Programmer backEndProgrammer;
-    private Programmer frontEndProgrammer;
+    protected Programmer backEndProgrammer;
+    protected Programmer frontEndProgrammer;
 
-    protected Server server = new Server("test");
-    protected Language backEndLanguage = new Language("java");
-    protected Language frontEndLanguage = new Language("kotlinJS");
-
-    public void setBackEndLanguage(Language backEndLanguage) {
-        this.backEndLanguage = backEndLanguage;
-    }
-
-    public void setFrontEndLanguage(Language frontEndLanguage) {
-        this.frontEndLanguage = frontEndLanguage;
-    }
-
-    public void setBackEndProgrammer(Programmer programmer) {
-        backEndProgrammer = programmer;
-    }
-
-    public void setFrontEndProgrammer(Programmer programmer) {
-        frontEndProgrammer = programmer;
-    }
+    private Server server = new Server("test");
+    private Language backEndLanguage = new Language("java");
+    private Language frontEndLanguage = new Language("kotlinJS");
 
     public Server getServer() {
         return server;
