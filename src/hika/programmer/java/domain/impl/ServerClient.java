@@ -1,9 +1,9 @@
-package hika.programmer.java.interf.impl;
+package hika.programmer.java.domain.impl;
 
 import hika.programmer.java.domain.Language;
 import hika.programmer.java.domain.Server;
-import hika.programmer.java.interf.Paper;
-import hika.programmer.java.interf.Programmer;
+import hika.programmer.java.domain.Paper;
+import hika.programmer.java.domain.Programmer;
 
 public abstract class ServerClient implements Paper {
     private Programmer backEndProgrammer;

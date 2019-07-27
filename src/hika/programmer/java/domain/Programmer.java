@@ -1,6 +1,4 @@
-package hika.programmer.java.interf;
-
-import hika.programmer.java.domain.Program;
+package hika.programmer.java.domain;
 
 public abstract class Programmer<T extends Paper> {
     public Program getProgram(T paper) {

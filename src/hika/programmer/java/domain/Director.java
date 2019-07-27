@@ -1,7 +1,5 @@
 package hika.programmer.java.domain;
 
-import hika.programmer.java.interf.Paper;
-
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;

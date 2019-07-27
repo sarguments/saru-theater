@@ -2,11 +2,11 @@ package hika.programmer.java;
 
 import hika.programmer.java.domain.Director;
 import hika.programmer.java.domain.Program;
-import hika.programmer.java.interf.Programmer;
-import hika.programmer.java.interf.impl.BackEnd;
-import hika.programmer.java.interf.impl.Client;
-import hika.programmer.java.interf.impl.FrontEnd;
-import hika.programmer.java.interf.impl.ServerClient;
+import hika.programmer.java.domain.Programmer;
+import hika.programmer.java.domain.impl.BackEnd;
+import hika.programmer.java.domain.impl.Client;
+import hika.programmer.java.domain.impl.FrontEnd;
+import hika.programmer.java.domain.impl.ServerClient;
 
 public class Main {
     public static void main(String[] args) {

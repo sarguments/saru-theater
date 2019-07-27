@@ -1,4 +1,4 @@
-package hika.programmer.java.interf;
+package hika.programmer.java.domain;
 
 import hika.programmer.java.domain.Program;
 
