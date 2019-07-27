@@ -1,8 +1,8 @@
 package hika.saru.java.discount;
 
-import hika.saru.java.vo.Money;
 import hika.saru.java.Screening;
 import hika.saru.java.discount.impl.AmountDiscount;
+import hika.saru.java.vo.Money;
 
 public class SequenceAmountDiscount extends AmountDiscount {
     private final int sequence;

@@ -1,8 +1,8 @@
 package hika.saru.java.discount.impl;
 
-import hika.saru.java.vo.Money;
 import hika.saru.java.discount.DiscountCondition;
 import hika.saru.java.discount.DiscountPolicy;
+import hika.saru.java.vo.Money;
 
 public abstract class PercentDiscount implements DiscountPolicy.PERCENT, DiscountCondition {
     private final double percent;
