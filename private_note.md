@@ -31,6 +31,9 @@
 ### 제네릭
 - [Generic](generic.md)
 
+### 공변 & 반공변
+- [공변_반공변](variant.md)
+
 ### ETC
 
 ## 객체
