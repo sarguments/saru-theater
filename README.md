@@ -33,6 +33,11 @@
 
 [정리전 노트](lecture_04.md)
 
+## 5회차
+
+[정리전 노트](lecture_05.md)
+
+
 ---
 
 [개인 정리](private_note.md)
